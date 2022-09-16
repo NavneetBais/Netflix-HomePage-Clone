@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-
+    <link rel="icon" href="../assests/netflix_favicon.svg" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
   </head>
   <style>
     .background-image {
-      background-image: url("assests/banner.jpg");
+      background-image: url("../assests/banner.jpg");
       /* Used if the image is unavailable */
       height: 700px; /* You must set a specified height */
       background-position: center; /* Center the image */
@@ -32,10 +32,7 @@
 
     .bg-transparent {
       background-color: black;
-      background-image: linear-gradient(
-        rgba(0, 0, 0, 0.854),
-        rgba(0, 0, 0, 0.018)
-      );
+      background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
     }
     .bg-color {
       background-color: #000000;
@@ -50,7 +47,7 @@
     <section class="background-image overlay">
       <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
         <a class="navbar-brand" href="#"
-          ><img src="/assests/logo.png" width="150px" alt=""
+          ><img src="../assests/logo.png" width="200px" alt=""
         /></a>
         <ul class="navbar-nav mr-auto"></ul>
 
@@ -85,17 +82,15 @@
       <!---------------------------->
 
       <div class="container">
-        <div class="text-center text-light">
-          <div class="p-5">
-            <h1 class="display-3 font-weight-bolder">
-              Unlimited movies,TV <br />shows and more.
-            </h1>
-            <h4>Watch anywhere. Cancel anytime.</h4>
-            <h5>
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </h5>
-          </div>
+        <div class="text-center p-5 col-lg-10 offset-1 text-light">
+          <h1 class="display-3 font-weight-bolder">
+            Unlimited movies,TV <br />shows and more.
+          </h1>
+          <h4>Watch anywhere. Cancel anytime.</h4>
+          <h5>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h5>
         </div>
         <div class="row">
           <div class="col-md-6 offset-3">
@@ -135,16 +130,16 @@
           </div>
           <div class="col-md-6">
             <div class="position-absolute" style="z-index: 2">
-              <img src="assests/tv.png" alt="" />
+              <img src="../assests/tv.png" alt="" />
             </div>
 
             <div
               class="position-absolute"
               style="margin-top: 6rem; margin-left: 5rem"
             >
-              <video loop playsinline autoplay>
+              <video loop playsinline muted autoplay>
                 <source
-                  src="assests/videos/video-tv-in-0819.m4v"
+                  src="../assests/videos/video-tv-in-0819.m4v"
                   type="video/mp4"
                 />
               </video>
@@ -157,7 +152,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="/assests/mobile-0819.jpg" alt="" />
+            <img src="/../assests/mobile-0819.jpg" alt="" />
           </div>
           <div class="col-md-6" style="padding-top: 10rem">
             <h4 class="display-6 font-weight-bolder" style="font-size: 50px">
@@ -184,16 +179,16 @@
           </div>
           <div class="col-md-6">
             <div class="position-absolute" style="z-index: 2">
-              <img src="assests/device-pile-in.png" alt="" />
+              <img src="../assests/device-pile-in.png" alt="" />
             </div>
 
             <div
               class="position-absolute"
               style="margin-top: 3.5rem; margin-left: 8rem; max-width: 70%"
             >
-              <video style="width: 100%" loop playsinline autoplay>
+              <video style="width: 100%" loop playsinline muted autoplay>
                 <source
-                  src="assests/videos/video-devices-in.m4v"
+                  src="../assests/videos/video-devices-in.m4v"
                   type="video/mp4"
                 />
               </video>
@@ -207,7 +202,7 @@
         <div class="row">
           <div class="col-md-6">
             <img
-              src="/assests/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png"
+              src="/../assests/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png"
               style="padding: 8rem 0"
               width="90%"
               alt=""
@@ -242,10 +237,11 @@
                   id="headingOne"
                 >
                   <button
-                    class="btn text-light"
+                    class="btn text-left text-light"
                     data-toggle="collapse"
                     data-target="#collapseOne"
                     aria-expanded="true"
+                    style="width: 100%"
                     aria-controls="collapseOne"
                   >
                     <h5 class="mb-0 display-5">What is Netflix &nbsp ?</h5>
@@ -254,7 +250,7 @@
 
                 <div
                   id="collapseOne"
-                  class="collapse show"
+                  class="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordion"
                 >
@@ -276,10 +272,11 @@
                   id="headingOne"
                 >
                   <button
-                    class="btn text-light"
+                    class="btn text-left text-light"
                     data-toggle="collapse"
                     data-target="#collapseTwo"
                     aria-expanded="true"
+                    style="width: 100%"
                     aria-controls="collapseOne"
                   >
                     <h5 class="mb-0 display-5">
@@ -290,7 +287,7 @@
 
                 <div
                   id="collapseTwo"
-                  class="collapse show"
+                  class="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordion"
                 >
@@ -309,10 +306,11 @@
                   id="headingOne"
                 >
                   <button
-                    class="btn text-light"
+                    class="btn text-left text-light"
                     data-toggle="collapse"
                     data-target="#collapseThree"
                     aria-expanded="true"
+                    style="width: 100%"
                     aria-controls="collapseOne"
                   >
                     <h5 class="mb-0 display-5">Where can I watch &nbsp ?</h5>
@@ -321,7 +319,7 @@
 
                 <div
                   id="collapseThree"
-                  class="collapse show"
+                  class="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordion"
                 >
